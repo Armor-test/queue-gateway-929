@@ -1,0 +1,36 @@
+# CODEOWNERS file for queue-gateway-929
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-mobile @Armor-test/dept-automation @Armor-test/unit-test
+
+# Directory ownership
+/test/ @Armor-test/squad-frontend @Armor-test/grp-search
+/build/ @Armor-test/squad-tooling @Armor-test/squad-api @Armor-test/grp-payments
+/hooks/ @Armor-test/squad-product @Armor-test/grp-api
+/modules/ @Armor-test/squad-frontend @Armor-test/squad-apps @Armor-test/dept-release
+/web/ @Armor-test/team-governance @Armor-test/squad-cache
+/plugins/ @Armor-test/dept-ui @Armor-test/dept-reporting @Armor-test/squad-api
+/app/ @Armor-test/squad-ml @Armor-test/grp-payments @Armor-test/team-governance
+/core/ @Armor-test/squad-search @Armor-test/squad-cloud @Armor-test/squad-database
+/ui/ @Armor-test/team-notifications @Armor-test/squad-cache @Armor-test/team-frontend
+/pages/ @Armor-test/squad-search @Armor-test/team-research @Armor-test/team-logging
+/api/ @Armor-test/team-logging @Armor-test/dept-release
+
+# File type ownership
+*.go @Armor-test/dept-data @Armor-test/unit-governance @Armor-test/squad-cache
+*.yml @Armor-test/squad-apps @Armor-test/squad-ml @Armor-test/team-governance
+*.ini @Armor-test/dept-reporting @Armor-test/squad-qa
+*.rb @Armor-test/grp-integration @Armor-test/squad-qa
+*.js @Armor-test/grp-search @Armor-test/dept-logging
+*.ts @Armor-test/squad-reporting @Armor-test/dept-identity @Armor-test/team-governance
+*.jsx @Armor-test/dept-billing @Armor-test/squad-mobile @Armor-test/team-core
+*.html @Armor-test/dept-automation @Armor-test/grp-reporting
+*.xml @Armor-test/squad-cache @Armor-test/squad-reporting
+*.sql @Armor-test/team-research @Armor-test/unit-devops
+*.sh @Armor-test/squad-database @Armor-test/grp-ui
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
